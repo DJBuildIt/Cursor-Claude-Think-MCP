@@ -1,1 +1,41 @@
-{"name":"claude-think-mcp","version":"1.0.0","description":"Cursor MCP tool that enables thinking mode","main":"src/think-tool.js"}
+{
+  "name": "claude-think-mcp",
+  "version": "1.0.0",
+  "description": "A Cursor MCP tool that enables Claude's thinking mode",
+  "main": "src/think-tool.js",
+  "bin": {
+    "claude-think-tool": "src/think-tool.js"
+  },
+  "scripts": {
+    "start": "node src/think-tool.js",
+    "test": "jest",
+    "lint": "eslint src/**/*.js",
+    "install:global": "node scripts/install-global.js"
+  },
+  "keywords": [
+    "Claude",
+    "Cursor",
+    "MCP",
+    "AI",
+    "thinking",
+    "reasoning"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "DJBuildIt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DJBuildIt/Claude-Think-MCP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DJBuildIt/Claude-Think-MCP/issues"
+  },
+  "homepage": "https://github.com/DJBuildIt/Claude-Think-MCP#readme",
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "jest": "^29.6.2"
+  },
+  "dependencies": {}
+}

@@ -1,6 +1,6 @@
 # Claude Think Tool Examples
 
-This document provides examples of how to use the Claude Think Tool in Cursor.
+This document provides examples of how to use the Claude Think Tool in Cursor. These examples demonstrate the types of questions that benefit most from Claude's explicit thinking mode.
 
 ## Basic Usage
 
@@ -10,36 +10,68 @@ Simply type `think` followed by your question:
 think What is the time complexity of the merge sort algorithm?
 ```
 
-## Example Prompts for Different Types of Problems
+## Example Prompts By Category
 
-### Complex Problem Analysis
+### Programming and Development
 
-```
-think What approach should I take to implement a real-time collaborative document editor?
-```
-
-### Debugging Code
+#### Algorithm Analysis
 
 ```
-think My React component is re-rendering too frequently. How should I approach debugging this?
+think What is the computational complexity of quicksort in best, average, and worst cases? Why does the worst case occur?
 ```
 
-### Algorithm Design
-
 ```
-think How would I design an efficient algorithm to find all anagrams in a large text document?
+think Compare and contrast breadth-first search and depth-first search algorithms. When would you use one over the other?
 ```
 
-### System Architecture
+#### System Design
 
 ```
-think What's the best architecture for a serverless microservice that needs to process large video files?
+think How would you design a scalable URL shortening service like bit.ly?
 ```
 
-### Comparing Approaches
+```
+think What's the best architecture for a globally distributed database that prioritizes availability and partition tolerance?
+```
+
+#### Debugging Complex Issues
 
 ```
-think What are the tradeoffs between using WebSockets versus Server-Sent Events for real-time updates?
+think My Node.js application has a memory leak. What systematic approach should I take to identify and fix the source?
+```
+
+```
+think My React application suddenly starts showing this error: "Maximum update depth exceeded". What could be causing this and how should I debug it?
+```
+
+### Mathematics and Logic
+
+```
+think Prove that the square root of 2 is irrational.
+```
+
+```
+think What is the probability of getting at least one pair when dealt 5 cards from a standard 52-card deck?
+```
+
+### Decision Making
+
+```
+think What factors should I consider when choosing between TypeScript and JavaScript for a new web application?
+```
+
+```
+think What are the tradeoffs between monolithic and microservice architectures? How should I decide which is right for my application?
+```
+
+### Problem Solving
+
+```
+think How would you implement an LRU (Least Recently Used) cache with O(1) time complexity for both read and write operations?
+```
+
+```
+think How would you design an elevator system for a 50-story building to minimize wait times?
 ```
 
 ## Tips for Getting the Best Results
@@ -54,13 +86,17 @@ think What are the tradeoffs between using WebSockets versus Server-Sent Events 
 
 5. **Break down large questions**: For very complex questions, break them into smaller, more manageable parts.
 
+6. **Provide relevant context**: If your question relates to a specific codebase or situation, provide the necessary context.
+
+7. **Ask for tradeoffs**: For design and decision-making questions, explicitly ask for tradeoffs between different approaches.
+
 ## Example of Expected Output
 
 When you use the think tool, Claude will provide output similar to this:
 
 ```
 <thinking>
-Let me think about how quicksort works step by step:
+Let me analyze the time complexity of quicksort step by step:
 
 1. Quicksort is a divide-and-conquer algorithm.
 
@@ -75,13 +111,33 @@ Let me think about how quicksort works step by step:
    - When we find elements smaller than the pivot, we swap them to the left side
    - Finally, we place the pivot in its correct sorted position
 
-4. The average-case time complexity is O(n log n)
-   - Each partition takes O(n) time
-   - We make log n levels of recursion on average
-   - Best case is also O(n log n)
-   - Worst case is O(n²) when the array is already sorted and we pick the smallest/largest element as pivot
+4. Time complexity analysis:
+   - Best case: O(n log n)
+     * Occurs when the pivot always divides the array into roughly equal halves
+     * We get log n levels of recursion, and at each level we do O(n) work (the partitioning)
+   
+   - Average case: O(n log n)
+     * Even with random pivot selection, we tend to get reasonably balanced partitions
+     * Still results in log n levels with O(n) work per level
+   
+   - Worst case: O(n²)
+     * Occurs when the pivot is always the smallest or largest element
+     * This happens when the array is already sorted and we choose the first/last element as pivot
+     * In this case, each partition only reduces the problem size by 1, leading to n levels of recursion
+     * With O(n) work per level, we get O(n²) total
 
-5. Space complexity is O(log n) on average for the recursion stack.
+5. Space complexity:
+   - O(log n) on average for the recursion stack (best/average case)
+   - O(n) in the worst case when the recursion depth reaches n levels
+   
+6. Optimizations:
+   - Random pivot selection or "median-of-three" can help avoid the worst case
+   - Switching to insertion sort for small subarrays improves practical performance
 </thinking>
 
-Quicksort is a fast, divide-and-conquer sorting algorithm that works by selecting a 'pivot' element and partitioning the array around it, then recursively sorting the sub-arrays. It has average-case time complexity of O(n log n) and is widely used in practice due to its efficiency. 
+Quicksort has different time complexities depending on the scenario:
+
+- Best/Average case: O(n log n)
+- Worst case: O(n²) when the array is already sorted and we choose the smallest/largest element as pivot
+
+The algorithm is efficient in practice due to its good cache performance and the fact that its worst case can usually be avoided with proper pivot selection strategies like randomization or the median-of-three method. 
