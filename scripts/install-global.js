@@ -15,7 +15,7 @@ const { execSync } = require('child_process');
 // Configuration
 const HOME_DIR = os.homedir();
 const CURSOR_CONFIG_DIR = path.join(HOME_DIR, '.cursor');
-const TOOL_INSTALL_DIR = path.join(HOME_DIR, 'claude-think-tool');
+const TOOL_INSTALL_DIR = path.join(HOME_DIR, 'cursor-claud-think-mcp');
 const TOOL_SOURCE = path.join(__dirname, '..', 'src', 'think-tool.js');
 const TOOL_DEST = path.join(TOOL_INSTALL_DIR, 'think-tool.js');
 const MCP_CONFIG_FILE = path.join(CURSOR_CONFIG_DIR, 'mcp.json');
@@ -92,7 +92,7 @@ function configureMCP() {
     
     // Update the config with our tool
     config.mcpServers = config.mcpServers || {};
-    config.mcpServers['claude-think-tool'] = {
+    config.mcpServers['Cursor-Claud-Think-MCP'] = {
       command: 'node',
       args: [TOOL_DEST.replace(/\\/g, '\\\\')]  // Ensure Windows paths are properly escaped
     };

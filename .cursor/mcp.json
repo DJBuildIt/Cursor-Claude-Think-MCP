@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "claude-think-tool": {
+    "Cursor-Claud-Think-MCP": {
       "command": "node",
-      "args": ["src/think-tool.js"]
+      "args": ["${workspaceFolder}/src/think-tool.js"]
     }
   }
 } 

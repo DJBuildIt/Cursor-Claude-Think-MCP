@@ -18,7 +18,7 @@ const path = require('path');
 // Configuration
 const CONFIG = {
   debug: process.env.CLAUDE_THINK_DEBUG === 'true',
-  logFile: process.env.CLAUDE_THINK_LOG_FILE || path.join(process.env.HOME || process.env.USERPROFILE || '.', '.claude-think-tool.log'),
+  logFile: process.env.CLAUDE_THINK_LOG_FILE || path.join(process.env.HOME || process.env.USERPROFILE || '.', '.cursor-claud-think-mcp.log'),
   version: '1.0.0'
 };
 
@@ -67,7 +67,7 @@ function initialize() {
     jsonrpc: "2.0",
     method: "mcp/server_info",
     params: {
-      name: "claude-think-tool",
+      name: "Cursor-Claud-Think-MCP",
       version: CONFIG.version,
       tools: [
         {
