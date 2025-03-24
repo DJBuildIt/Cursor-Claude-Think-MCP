@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "claude-think-tool": {
+      "command": "node",
+      "args": ["src/think-tool.js"]
+    }
+  }
+} 

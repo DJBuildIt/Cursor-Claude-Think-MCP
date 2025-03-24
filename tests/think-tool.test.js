@@ -1,5 +1,5 @@
 /**
- * Tests for the Claude Think Tool MCP Server
+ * Tests for the Cursor & Claude Think MCP
  * 
  * These tests verify that the tool correctly formats thinking prompts
  * and handles JSON-RPC requests properly.

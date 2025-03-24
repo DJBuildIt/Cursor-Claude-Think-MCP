@@ -1,6 +1,6 @@
-# Contributing to Claude Think MCP
+# Contributing to Cursor & Claude Think MCP
 
-Thank you for considering contributing to the Claude Think MCP Tool! This document provides guidelines and instructions for contributing to the project.
+Thank you for considering contributing to the Cursor & Claude Think MCP Tool! This document provides guidelines and instructions for contributing to the project.
 
 ## Code of Conduct
 

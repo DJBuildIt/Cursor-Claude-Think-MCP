@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Claude Think Tool MCP Server for Cursor
+ * Cursor & Claude Think MCP Server
  * 
  * This tool enables Claude's explicit thinking mode in Cursor,
  * allowing users to see Claude's step-by-step reasoning process
@@ -60,7 +60,7 @@ function log(message, level = 'info') {
  * Initializes the server and sets up event handlers
  */
 function initialize() {
-  log(`Claude Think Tool MCP Server starting (version ${CONFIG.version})`);
+  log(`Cursor & Claude Think MCP starting (version ${CONFIG.version})`);
   
   // Send server information to Cursor
   console.log(JSON.stringify({

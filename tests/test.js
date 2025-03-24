@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// Test script for Claude Think Tool MCP server
+// Test script for Cursor & Claude Think MCP
 // This simulates how Cursor would interact with the MCP server
 
 const { spawn } = require('child_process');
@@ -69,4 +69,4 @@ mcpServer.on('close', (code) => {
   }
 });
 
-console.log('🔍 Testing Claude Think Tool MCP server...'); 
+console.log('🔍 Testing Cursor & Claude Think MCP...'); 

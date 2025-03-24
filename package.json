@@ -1,5 +1,5 @@
 {
-  "name": "claude-think-mcp",
+  "name": "cursor-claude-think-mcp",
   "version": "1.0.0",
   "description": "A Cursor MCP tool that enables Claude's thinking mode",
   "main": "src/think-tool.js",
@@ -27,12 +27,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DJBuildIt/Claude-Think-MCP.git"
+    "url": "git+https://github.com/DJBuildIt/Cursor-Claude-Think-MCP.git"
   },
   "bugs": {
-    "url": "https://github.com/DJBuildIt/Claude-Think-MCP/issues"
+    "url": "https://github.com/DJBuildIt/Cursor-Claude-Think-MCP/issues"
   },
-  "homepage": "https://github.com/DJBuildIt/Claude-Think-MCP#readme",
+  "homepage": "https://github.com/DJBuildIt/Cursor-Claude-Think-MCP#readme",
   "devDependencies": {
     "eslint": "^8.47.0",
     "jest": "^29.6.2"

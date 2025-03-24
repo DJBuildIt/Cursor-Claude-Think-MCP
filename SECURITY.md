@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Only the latest version of Claude Think Tool is currently supported with security updates.
+Only the latest version of Cursor & Claude Think MCP is currently supported with security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -10,7 +10,7 @@ Only the latest version of Claude Think Tool is currently supported with securit
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in the Claude Think Tool, please follow these steps:
+If you discover a security vulnerability in the Cursor & Claude Think MCP, please follow these steps:
 
 1. **Do Not** disclose the vulnerability publicly until it has been addressed.
 2. Submit your report via GitHub's Security Advisory feature or send an email to [security@example.com](mailto:security@example.com) with the following information:
@@ -25,7 +25,7 @@ If you discover a security vulnerability in the Claude Think Tool, please follow
 
 ## Security Considerations
 
-The Claude Think Tool:
+The Cursor & Claude Think MCP:
 - Runs locally on your machine
 - Does not send or receive data beyond your local Cursor instance
 - Only processes the text prompts you explicitly provide
@@ -40,4 +40,4 @@ When using this tool:
 - Do not modify the tool script unless you understand the implications
 - Do not run the tool with elevated/administrator privileges
 
-Thank you for helping keep Claude Think Tool secure!
+Thank you for helping keep Cursor & Claude Think MCP secure!

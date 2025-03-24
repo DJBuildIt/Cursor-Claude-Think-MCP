@@ -1,4 +1,4 @@
-# Claude Think Tool for Cursor
+# Cursor & Claude Think MCP
 
 This MCP (Model Context Protocol) tool enables Claude's explicit thinking mode in Cursor, allowing you to see Claude's step-by-step reasoning process.
 

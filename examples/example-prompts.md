@@ -1,6 +1,6 @@
-# Claude Think Tool Examples
+# Cursor & Claude Think MCP Examples
 
-This document provides examples of how to use the Claude Think Tool in Cursor. These examples demonstrate the types of questions that benefit most from Claude's explicit thinking mode.
+This document provides examples of how to use the Cursor & Claude Think MCP in Cursor. These examples demonstrate the types of questions that benefit most from Claude's explicit thinking mode.
 
 ## Basic Usage
 

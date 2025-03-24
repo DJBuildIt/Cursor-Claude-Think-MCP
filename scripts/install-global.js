@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 /**
- * Global Installation Script for Claude Think MCP Tool
+ * Global Installation Script for Cursor & Claude Think MCP
  * 
- * This script automates the process of installing the Claude Think Tool
+ * This script automates the process of installing the Cursor & Claude Think MCP
  * globally on your system, setting up the necessary configuration for Cursor.
  */
 
@@ -112,7 +112,7 @@ function configureMCP() {
  * Main installation function
  */
 function install() {
-  log('\n🔧 Installing Claude Think Tool globally...\n', colors.blue);
+  log('\n🔧 Installing Cursor & Claude Think MCP globally...\n', colors.blue);
   
   // Create necessary directories
   ensureDirectoryExists(CURSOR_CONFIG_DIR);
@@ -133,7 +133,7 @@ function install() {
   }
   
   // Installation complete
-  log('\n✅ Claude Think Tool installed successfully!', colors.green);
+  log('\n✅ Cursor & Claude Think MCP installed successfully!', colors.green);
   log('\n⚠️  IMPORTANT: You must restart Cursor for the changes to take effect.', colors.yellow);
   log('\n📘 Usage: In any Cursor chat, type "think" followed by your question.', colors.blue);
   log('  Example: think What is the computational complexity of quicksort?', colors.blue);
