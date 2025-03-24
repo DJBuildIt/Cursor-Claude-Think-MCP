@@ -76,7 +76,11 @@ In any Cursor chat, simply type:
 think What is the computational complexity of quicksort?
 ```
 
-Claude will enter thinking mode and show you its reasoning process before giving the final answer.
+**Important Usage Notes:**
+- The word "think" must be at the beginning of your message followed by a space
+- Everything after "think " will be processed by Claude in its special thinking mode
+- The tool will not activate if "think" appears elsewhere in your message
+- No formatting or special characters are needed - just start with "think "
 
 ## Examples
 

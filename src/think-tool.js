@@ -230,7 +230,15 @@ function formatThinkingPrompt(prompt) {
   const escapedPrompt = escapeHtml(prompt);
   
   return `<thinking>
-Please work through this question step by step:
+Think extraordinarily deeply about this problem.
+Break this down step-by-step, showing all your reasoning.
+Consider multiple alternative approaches before deciding.
+Explicitly identify and examine your assumptions.
+Look for edge cases and potential failure modes.
+Evaluate trade-offs between different solutions.
+Challenge your initial intuitions with counterarguments.
+Synthesize your insights before delivering a conclusion.
+
 ${escapedPrompt}
 </thinking>
 
